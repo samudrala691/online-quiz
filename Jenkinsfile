@@ -4,7 +4,8 @@ node{
    def tomcatStatus = ''
    
   stage('SCM Checkout'){
-     git 'https://github.com/samudrala691/online-quiz.git'
+     git branch: 'main', url:'https://github.com/samudrala691/online-quiz.git'
+	  
    }
  
    stage('Compile-Package-create-war-file'){
